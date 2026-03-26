@@ -1,0 +1,13 @@
+# frontend (ignore completely)
+frontend/
+
+# node modules (global + nested)
+node_modules/
+**/node_modules/
+
+# env files
+.env
+**/.env
+
+# logs
+*.log
