@@ -20,10 +20,10 @@ const generateContest = async (req, res) => {
         error: "Not enough questions in database",
       });
     }
-    const question = [...easy, ...medium, ...hard];
+    const questions = [...easy, ...medium, ...hard];
     const startTime = new Date();
     const duration = 60 * 60;
-    res.json({ question, startTime, duration });
+    res.json({ questions, startTime, duration });
   } catch (error) {
     res.status(500).json({
       message: error.message,
